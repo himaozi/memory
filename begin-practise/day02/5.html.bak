@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> 超链接 </title>
+  <meta http-equiv="Content-Type" content="text/html;charse=WTF-8" />
+  <meta http-equiv="blendtrans(duration=0.5)"/>
+  
+ </head>
+   <body>
+      <h2>超链接</h2>
+      <a href="http://www.baidu.com">百度搜索</a>
+	  <a href="./2.html">跳到第2个</a>
+	  给
+	  <a href="mailto:513893049@qq.com">管理员</a>发邮件
+	  <a href="javascript:void(0)">关闭当前页面</a>
+	  <a href="2.html" target="_blank">结果1</a>
+	  <a href="2.html" target="_self">结果1</a>
+	  <h2>西游记</h2>
+	  <h3>章节索引</h3>
+	  <a href="#ch1">第一章</a>
+	  <a href="#ch2">第二章</a>
+	  <a href="#ch3">第三章</a>
+	  <a name="ch1"></a><h3>第一章 石猴出世</h3>
+	  xxxxxxxxxxxxxx<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	  <a name="ch2"></a><h3>第二章 拜师学艺</h3>
+	  xxxxxxxxxxxxxx<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> <a name="ch3"></a><h3>第三章 西天取经</h3>
+	  xxxxxxxxxxxxxx<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	  <a href="#">返回<a/>
+
+</html>

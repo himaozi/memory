@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>有人喜欢蓝</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" /> 
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<script src="js/getDevicePixelRatio-min.js"></script><!--引入可以获取ratio的插件-->
+<link rel="stylesheet" href="css/reset.css"/><!--重置样式-->
+<script>//冬天调整rem大小。
+    var cssEl = document.createElement('style');
+    document.documentElement.firstElementChild.appendChild(cssEl);
+    //设置html标签的font-size。
+    function setPxPerRem(){
+        var dpr = 1;
+        //把viewport氛围10份的rem，html标签的font-size设置为1rem大小。
+        var PxPerRem = document.documentElement.clientWidth*dpr/10;
+        cssEl.innerHTML = 'html{font-size:'+PxPerRem+'px!important;}';
+       }
+    setPxPerRem();
+</script>
+<style>
+    
+</style>
+</head>
+<body>
+    
+<script>
+   
+</script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>有人喜欢蓝</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" /> 
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<script src="js/jquery.min.js"></script>
+<script src="js/getDevicePixelRatio-min.js"></script>
+<link rel="stylesheet" href="css/reset.css"/>
+
+<style>
+    body{
+        max-width:1024px;
+    }
+    div#nav{
+        position: fixed;
+        width: 10rem;
+        height: 1.63rem;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        z-index: 2;
+    }
+    div#nav div.logo{
+        height: 1.63rem;
+        float: left;
+        margin-left: 0.4rem;
+    }
+    div#nav div.logo img{
+        width: 0.93rem;
+        height: 0.93rem;
+        float: left;
+        margin-top: 0.35rem;
+    }
+    div.name{
+        margin-left: 0.27rem;
+        float: left;
+        vertical-align: middle;
+    }
+    div.name p:first-child{
+        font-size: 0.43rem;
+        color: #666;
+    }
+    div.name p:last-child{
+        font-size: 0.37rem;
+        color: #999;
+        margin-top: 0.19rem;
+    }
+    a.button{
+        text-align: center;
+        width: 2.08rem;
+        height: 0.77rem;
+        font-size: 0.37rem;
+        color: #fff;
+        border: 0 solid transparent;
+        border-radius: 0.13rem;
+        background-color: #44c5ff;
+        float: right;
+        margin-right: 0.4rem;
+        margin-top: 0.43rem;
+        line-height: 0.77rem;
+    }
+    div.middle_box{
+        display:table-cell;
+        vertical-align:middle;
+        height: 1.63rem;
+    }
+    div.container{
+        height: 1.63rem;
+    }
+    div#content{
+        padding: 0.4rem;
+    }
+    h3{
+        font-family: 苹方;
+        font-weight: bold;
+        font-size: 0.43rem;
+        color: #333;
+        margin-bottom: 0.4rem;
+    }
+    h5{
+        font-family: 苹方;
+        font-weight: normal;
+        font-size: 0.4rem;
+        color: #999;
+        margin-bottom: 0.45rem;
+    }
+    div#content p.words{
+        font-family: 苹方;
+        font-weight: normal;
+        font-size: 0.37rem;
+        margin: 0 0 0.53rem 0;
+        line-height: 0.64rem;
+        
+    }
+    div#content p.author{
+        font-family: 苹方;
+        font-weight: normal;
+        font-size: 0.37rem;
+    }
+    div#content img{
+        width: 100%;
+        height: auto;
+        margin: 0.67rem 0;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+    <div id="nav">
+        <div class="logo">
+            <img id="logo_img" src="images/img_14_n@2x.png" alt="">
+            <div class="middle_box">
+                <div class="name">
+                    <p>WiFi盒子</p>
+                    <p>免费WiFi如影相随</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="button">立即下载</a>
+    </div>
+    </div>
+    <div id="content">
+        <h3>有人喜欢蓝</h3>
+        <h5>来源：小拍的相册</h5>
+        <p class="words">我不清楚根本天生喜欢那样那样的蓝/还是我一堆你这种色彩太习惯/时间缤纷风景好比烟花/匆匆一霎那便吹散/看尽浓和淡/还只有她不散</p>
+        <p class="author">—— ——苏永康</p>
+        <img src="images/pic.jpg" alt="">
+        <p class="words">我不清楚根本天生喜欢那样那样的蓝/还是我一堆你这种色彩太习惯/时间缤纷风景好比烟花/匆匆一霎那便吹散/看尽浓和淡/还只有她不散</p>
+        <p class="words">我不清楚根本天生喜欢那样那样的蓝/还是我一堆你这种色彩太习惯/时间缤纷风景好比烟花/匆匆一霎那便吹散/看尽浓和淡/还只有她不散</p>
+        
+    </div>
+<script>
+    var cssEl = document.createElement('style');
+    document.documentElement.firstElementChild.appendChild(cssEl);
+    //设置html标签的font-size。
+    function setPxPerRem(){
+        var dpr = 1;
+        //把body的屏幕实际宽度分为10份的rem，html标签的font-size设置为1rem大小。
+        var PxPerRem = ($('body')[0].offsetWidth)*dpr/10;
+        cssEl.innerHTML = 'html{font-size:'+PxPerRem+'px!important;}';
+       // var s = $('body')[0].offsetWidth;
+        //alert(s);
+     }
+     setPxPerRem();
+     onresize = setPxPerRem;
+     
+    var ratio = window.devicePixelRatio;
+    var logo = document.getElementById('logo_img');
+    if(ratio==3){
+        logo.src="images/img_14_n@3x.png"
+    }
+</script>
+</body>
+</html>

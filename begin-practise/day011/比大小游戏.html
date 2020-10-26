@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+	<title></title>
+    </head>
+    <body>
+        <script>
+             var n=parseInt(Math.random()*(10-0+1)+0);
+             var input;
+			 while (input!=n)
+			 {
+				 input=prompt("猜我产生的数");
+				 if (input!="")
+				 {
+					 if (input=="exit")
+					 {
+						 alert("你放弃了");
+						 break;
+					 }else {
+					     parseInt(input);
+						 if (input>n)
+						 {
+							 alert("猜大了");
+						 }else if (input<n)
+						 {
+							 alert("猜小了");
+						 }else {
+						     alert("你猜对了！！");
+						 }
+					 }
+				 }
+			 }
+
+	</script>
+
+      
+    </body>
+
+</html>

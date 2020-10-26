@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>手机网站</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" /> 
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/reset.css">
+<style>
+    /*div.background{
+            width: 100%;
+            height: auto;
+            background: url(images/bg_5.png) 0 0 no-repeat;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+    }
+    @media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){ 
+           div.background{
+               width: 320px;
+               height: 416px;
+               background: url(images/bg_4.png) 0 0 no-repeat;
+           }
+            -webkit-background-size: 100% 100%;
+           background-size: 100% 100%;
+    }
+    
+    @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){
+       div.background{
+            width: 320px;
+            height: 504px;
+            background: url(images/bg_5.png) 0 0 no-repeat;
+           }
+           -webkit-background-size: 100% 100%;
+           background-size: 100% 100%;
+    }
+    @media (device-height:667px) and (-webkit-min-device-pixel-ratio:2){
+       div.background{
+            width: 375px;
+            height: 603px;
+            background: url(images/bg_6.png) 0 0 no-repeat;
+           }
+           -webkit-background-size: 100% 100%;
+           background-size: 100% 100%;
+    }
+    @media (device-height:736px) and (-webkit-min-device-pixel-ratio:3){
+       div.background{
+            width: 414px;
+            height: 672px;
+            background: url(images/bg_6p.png) 0 0 no-repeat;
+           }
+           -webkit-background-size: 100% 100%;
+           background-size: 100% 100%;
+    }*/
+    body{
+        max-width:1024px;
+    }
+    img#background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+    }
+    div#download_box {
+        padding: 0 0.66rem;
+        display: inline-block;
+        position: absolute;
+        top: 14.35rem;
+    }
+    div#download_box a img{
+        width: 0.45rem;
+        height: 0.53rem;
+        margin-left: 0.64rem;
+        margin-top: 0.33rem;
+    }
+    div#download_box a{
+        display: block;
+        float: left;
+        width: 4.13rem;
+        height: 1.2rem; 
+        background-color: #494949;
+        font-family: 苹方;
+        font-size: 0.4rem;
+        font-weight: bold;
+        color: #fff;
+        border: 0px solid transparent;
+        border-radius: 0.2rem;
+        line-height: 1.2rem;
+    }
+    div#download_box a:last-child{
+        margin-left: 0.34rem;
+        background-color: #44c5ff;
+    }
+    div#download_box a span{
+        line-height: 1.2rem;
+        float: right;
+        margin-right: 0.64rem;
+    }
+    
+</style>
+</head>
+<body>
+     <img id="background" src="images/bg_5.png" alt="">
+     <div id="download_box">
+         <a href="#"><img id="button_ios" src="images/img_15_n@2x.png" alt=""><span>iPhone下载</span></a>
+         <a href="#"><img id="button_android" src="images/img_16_n@2x.png" alt=""><span>Android下载</span></a>
+     </div>
+     
+<script>
+    var cssEl = document.createElement('style');
+    document.documentElement.firstElementChild.appendChild(cssEl);
+    //设置html标签的font-size。
+    function setPxPerRem(){
+        var dpr = 1;
+        //把body的屏幕实际宽度分为10份的rem，html标签的font-size设置为1rem大小。
+        var PxPerRem = ($('body')[0].offsetWidth)*dpr/10;
+        cssEl.innerHTML = 'html{font-size:'+PxPerRem+'px!important;}';
+       // var s = $('body')[0].offsetWidth;
+        //alert(s);
+     }
+     setPxPerRem();
+     onresize = setPxPerRem;
+     
+     
+    var d_height = window.screen.height;
+    var bg_pic = document.getElementById('background');
+    var download_ios = document.getElementById('button_ios');
+    var download_android = document.getElementById('button_android');
+    switch(d_height){
+        case 480:
+            bg_pic.src="images/bg_4.png";
+            break;
+        case 568:
+            bg_pic.src="images/bg_5.png";
+            break;
+        case 667:
+            bg_pic.src="images/bg_6.png";
+            break;
+        case 736:
+            bg_pic.src="images/bg_6p.png";
+            download_ios.src="images/img_15_n@3x.png";
+			download_android.src="images/img_16_n@3x.png";
+            break;
+        default:
+            bg_pic.src="images/bg_5.png";
+            break;
+    }
+	// var s = document.documentElement.scrollWidth;
+   // alert(s);
+</script>
+</body>
+</html>

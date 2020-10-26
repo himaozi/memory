@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> 过度效果 </title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <style type="text/css">
+  .boeder{
+      width:200px;
+	  height:50px;
+	  border:1px solid #000;
+	  margin: 5px 5px;
+	  background-color:blue;
+	  transition: width 2s linear 100ms,background-color 2s linear 100ms;
+	  /*transition: background-color 2s linear 100ms;*/
+	 }
+  img{
+      transform:scale(1.5,1.5) rotate(0deg);
+	  transition:transform 2s linear 100ms;
+	  }
+  
+  div:hover{
+      width:600px;
+      background-color:red;
+  }
+  img:hover{
+      transform:scale(1.5,1.5) rotate(720deg);}
+  </style>
+ </head>
+ <body>
+ <img src="star.jpg">
+ <div class="boeder"></div>
+ <div class="boeder"></div>
+ <div class="boeder"></div>
+ <div class="boeder"></div>
+ </body>
+</html>

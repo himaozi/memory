@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+  <title>商品展示</title>
+ </head>
+ <style type="text/css">
+   .lj{
+      display:block;
+	  float:left;
+	  border:1px solid #000;
+	  background-color:#aaa;
+	  padding:2px 2px;
+	  margin:2px 20px;
+	}
+	#content{
+	  clear:both;
+	}
+	img{
+	  display:none;
+	  border:1px solid #aaa;
+	}
+    /*第一幅图片的动画*/
+	@-webkit-keyframes sp1Anim{
+		0%{
+			transform: scale(0) rotate(0);
+		}
+		100%{
+			transform: scale(1) rotate(360deg);
+		}
+	}
+	#sp1:target{
+		display: inline-block;
+		-webkit-animation: sp1Anim 2s linear ;
+		-webkit-animation-fill-mode: both;
+
+	}
+	@-webkit-keyframes sp2Anim{
+		0%{
+			transform: translate(-200px);
+		}
+		100%{
+			transform: translate(0);
+		}
+	}
+	#sp2:target{
+		display: inline-block;
+		-webkit-animation: sp2Anim 2s linear 1s ;
+		-webkit-animation-fill-mode: both;
+
+	}
+ </style>
+
+ <body>
+   <a class=lj href="#sp1">商品1</a>
+   <a class=lj href="#sp2">商品2</a>
+   <a class=lj href="#sp3">商品3</a>
+   <a class=lj href="#sp4">商品4</a>
+   <br/>
+   <div id="content">
+     <img id="sp1" src="p001.jpg"/>
+     <img id="sp2" src="p002.jpg"/>
+     <img id="sp3" src="p003.jpg"/>
+     <img id="sp4" src="p004.jpg"/>
+   </div> 
+  
+ </body>
+</html>

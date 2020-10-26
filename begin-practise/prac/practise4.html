@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+		var code='var y=document.getElementById("str").value;alert(x+y);'
+		var myFunc=new Function("x",code);
+		var code2='document.getElementById("func").innerText=myFunc.toString();';
+		var myFunc2=new Function(code2);
+  </script>
+ </head>
+ <body>
+	<input type="text" id="str" value=""/>
+	<button onclick="myFunc('你填写的内容：');">显示填写的内容</button>
+	<button onclick="myFunc2();">显示myFunction 函数</button>
+	<span id="func"></span>;
+ </body>
+</html>
+ 

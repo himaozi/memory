@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> 简历 </title>
+  <meta http-equiv="Content-Type" content="text/html;charse=WTF-8" />
+  <meta http-equiv="blendtrans(duration=0.5)"/>
+  
+ </head>
+   <body>
+     <h2 align="center">我的简历</h2>
+	 <table border="1" width="500px" align="center">
+	   <tr>
+	     <td align="center" colspan="5"><h2>杨利波</h2></td>
+	   </tr>
+	   <tr>
+	     <td>电话：</td>
+	     <td>18629475421</td>
+	     <td>邮箱：</td>
+	     <td>513893049@qq.com</td>
+	     <td rowspan="2"><img src="computer2.png"/></td>
+	   </tr>
+	   <tr>
+	     <td>专业：</td>
+	     <td>土木工程</td>
+	     <td>生日：</td>
+	     <td>1990年9月</td>
+	   </tr>
+	   <tr>
+	     <td valign="top" colspan="5" height="150px">专业技能</td> 
+	     <td valign="top" colspan="5" height="150px">项目经验</td> 
+	     <td valign="top" colspan="5" height="80px">所获奖励</td> 
+	   </tr>
+   </body>
+      
+</html>

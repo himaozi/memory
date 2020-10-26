@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> new document </title>
+		<meta charset="UTF-8" />
+		<link rel="Stylesheet" href="css/*.css" media="screen"/>
+		<script type="text/javascript" src= "js/jquery.js"></script>
+		<style type="text/css">
+			.main{text-align: center;}
+			.after {width:100%;height:100%;background-color:rgba(120,120,120,0.6);z-index:0;position:fixed;top:0;right:0;display:none;}
+			.before{width:520px;height:600px;padding:40px;position:fixed;top:50px;left:700px;background-color:#fff;display:none;}
+			.before h1{font-size:20px; font-family:微软雅黑;color:#ff8b00;font-weight:200;}
+			.before h2{font-size:22px; font-family:微软雅黑;color:#333;font-weight:200;z-index:1;}
+			.before h3{font-size:18px; font-family:微软雅黑;color:#333;font-weight:200;}
+			.before p {font-size:16px; font-family:黑体;color:#666;font-weight:normal;line-height:30px;margin-bottom:10px;}
+			.before div { width:354px;height:46px;background:url(images/back_img.png) 0 0 no-repeat;text-align: center;font-size:24px;font-family:黑体;color:#fff;line-height:46px;margin:50px auto 10px auto;}
+			.before span{font-size:14px; font-family:微软雅黑;color:#333;font-weight:200;margin-left:160px;}
+		</style>
+	</head>
+	<body>
+		<div id="" class="main" onclick="show()"><img src="images/big_pic.png" alt="" > </div>
+		<div id="" class="after"></div>
+		<div id="" class="before">
+			<h1>职位名称</h1>
+			<h2>Android开发工程师</h2>
+			<h3>职位要求：</h3>
+			<p>
+					1:理工类专业，计算机相关专业。<br/>
+					2:熟悉C,C++或JAVA/J2EE的编辑技能。<br/>
+					3:Android网络通信技术（TCP.IP.HTTP.蓝牙.WIFI），系统UI设计。<br/>
+					4:熟悉Oracle，MysQL等数据库至少一种。<br/>
+					5:熟悉linux系统编辑环境，测试流程。<br/>
+					6:具有良好的团队协作精神和沟通协调的能力。<br/>
+			</p>
+			<h3>工作职责</h3>
+			<p>
+					1、能够独立完成Android的项目设计、编码、测试和优化。<br/>
+					2、开发不同的Android操作系统版本并完成兼容性测试。<br/>
+					3、对所开发的APP、SDK进行版本更新和维护。<br/>
+			</p>
+			<div class="">有才，你就来秀</div>
+			<span>简历投送至：hanju@163.com</span>
+		</div>
+  
+		<script>
+			function show() {$(".before").css("display","block");$(".after").css("display","block");}
+		</script>
+	</body>
+</html>
